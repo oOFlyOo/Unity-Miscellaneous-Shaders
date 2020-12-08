@@ -45,7 +45,7 @@ public class FootPrint : MonoBehaviour
         _dstRenderTexture = null;
     }
 
-    private void OnWillRenderObject()
+    private void LateUpdate()
     {
         if (_footPrintMaterial == null)
         {
